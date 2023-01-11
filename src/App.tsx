@@ -5,7 +5,7 @@ import  Images  from './components/ImageDisplay'
 
 function App() {
   const [images, setimages] = useState([])
-  const handleSubmit = async(event:any , searchValue:string) => {
+  const handleSubmit = async(event: React.FormEvent<HTMLFormElement> , searchValue:string) => {
     event.preventDefault()
    try {
      await axios.post('http://localhost:5000/store-data', {

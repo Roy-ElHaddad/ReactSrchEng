@@ -4,11 +4,11 @@ import "../index.css";
 const SearchBar =  ({handleSubmit}:{handleSubmit:Function}) => {
   const [searchValue , setSearchValue] = useState ('')
 
-  const handleChange = (event:any) => {
-      setSearchValue(event.target.value)
+  const handleChange = (event: React.FormEvent<HTMLInputElement>) => {
+      setSearchValue(event.currentTarget.value)
     }
   
-  const onSubmit = (event:any) => {
+  const onSubmit = (event:React.FormEvent<HTMLFormElement>) => {
     handleSubmit(event, searchValue) 
     const title = document.getElementById("title")
     if (title)
