@@ -16,9 +16,10 @@ const SearchBar =  ({handleSubmit}:{handleSubmit:Function}) => {
   } 
 
   return(
-      <>
+    <>
+      <p className= 'Title' >What would you like to search for:</p>
       <form onSubmit = {onSubmit}>
-       <input className='searchbar' type = "text" id= "fsearch" name="fsearch" onChange={handleChange} />
+        <input className='searchbar' type = "text" id= "fsearch" name="fsearch" onChange={handleChange} />
           <p className= 'titles' id = "title"  > Displaying images of {searchValue} : </p> 
       </form>
       </>

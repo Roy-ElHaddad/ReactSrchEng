@@ -8,10 +8,10 @@ function App() {
   const handleSubmit = async(event: React.FormEvent<HTMLFormElement> , searchValue:string) => {
     event.preventDefault()
    try {
-     await axios.post('http://localhost:5000/store-data', {
+     await axios.post('http://localhost:8080/store-data', {
        searchvalue : (searchValue)
       })
-     const response = await axios.get('http://localhost:5000/images') 
+     const response = await axios.get('http://localhost:8080/images') 
      setimages(response.data)
     } catch (error) {
       console.error(error)

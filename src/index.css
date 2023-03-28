@@ -9,16 +9,14 @@ body {
   
 }
 
-.images {
-  margin-top: 0.1%;
-  margin-left: 0.1%;
-  width: 24.8%;
-  height: 300px; 
+.Title{
+  color : antiquewhite;
+  text-decoration-line: underline;
+  font-weight: bold;
+  font-size: larger;
 }
 
-
 .searchbar {
-  margin-top: 1%;
   width: 40%;
   background-color: beige;
   font-weight: bold;
@@ -30,6 +28,13 @@ body {
   text-decoration-line: underline;
   display: none;
   font-weight: bolder;
+}
+
+.images {
+  margin-top: 0.1%;
+  margin-left: 0.1%;
+  width: 24.8%;
+  height: 300px; 
 }
 
 code {
